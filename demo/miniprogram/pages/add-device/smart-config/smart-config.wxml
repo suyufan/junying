@@ -1,0 +1,5 @@
+<wifi-conf
+  title="接入网络前的准备工作"
+  pluginName="wifiConfSmartConfig"
+  errorTips="{{errorTips}}"
+/>

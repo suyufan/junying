@@ -1,0 +1,41 @@
+.container {
+  padding: 60rpx 50rpx 0;
+}
+
+.page-title {
+  color: #333 ;
+  font-size: 54rpx;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.page-subtitle {
+  color: #333;
+  font-size: 40rpx;
+}
+
+.page-main {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copyright-text {
+  display: flex;
+  width: 650rpx;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 252rpx;
+} 
+
+
+.copyright-text p {
+  width: 650rpx;
+  font-size: 28rpx;
+  color: #686262;
+  text-align: center; 
+  float: left;
+}
+

@@ -1,0 +1,45 @@
+.container {
+  padding: 60rpx 50rpx 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.page-title {
+  color: #000;
+  font-size: 54rpx;
+  font-weight: 500;
+  align-self: flex-start;
+  height: calc(20vh);
+}
+
+.login-auth-pic {
+  margin-top: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.login-auth-bg-arrows {
+  width: 70rpx;
+  height: 180rpx;
+}
+
+.login-auth-bg {
+  width: 180rpx;
+  height: 180rpx;
+  margin: 0rpx 20rpx;
+  border-radius: 20rpx;
+}
+
+.login-auth-notice {
+  text-align: center;
+  margin-top: calc(25vh);
+  font-size: 28rpx;
+  color: #4B4B4B;
+}
+
+.login-auth-btn {
+  margin-top: 32rpx;
+}
