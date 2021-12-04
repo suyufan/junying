@@ -44,4 +44,7 @@ Page({
       console.error('绑定失败', err);
     }
   },
+  async onBackPage() {
+    console.log("点击了返回");
+  },
 })

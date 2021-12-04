@@ -26,7 +26,7 @@
     "backgroundColor": "#FFF",
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#FFF",
-    "navigationBarTitleText": "物联网开发平台小程序 Demo",
+    "navigationBarTitleText": "骏影物联网开发平台",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",

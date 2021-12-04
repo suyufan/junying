@@ -3,4 +3,5 @@
   adapterType="LLSync"
   bind:connected="onBluetoothConnected" 
   bind:nextStep="onNextStep" 
+  bind:backPage="onBackPage"
 />
