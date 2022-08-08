@@ -1,2 +1,6 @@
-<!--pages/add-device/soft-ap/soft-ap.wxml-->
-<text>pages/add-device/soft-ap/soft-ap.wxml</text>
+<wifi-conf
+  title="SoftAP 配网"
+  pluginName="wifiConfSoftAp"
+  errorTips="{{errorTips}}"
+  needDeviceAp="{{true}}"
+/>

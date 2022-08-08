@@ -1,4 +1,4 @@
-// 请填写 物联网开发平台 > 应用开发 中申请的小程序 AppKey
+// Todo 请填写 物联网开发平台 > 应用开发 中申请的小程序 AppKey
 const APP_KEY = 'mOjOndlvwYAyfuYxc';
 
 // 如果在开发过程中需要更换 AppKey，请按照以下步骤操作：
@@ -35,16 +35,14 @@ App({
       console.error('小程序基础库版本过低，请使用 2.2.3 或以上版本的支持库以使用云开发能力');
     } else {
       wx.cloud.init({
-        // env 参数决定接下来小程序发起的云开发调用（wx.cloud.xxx）会默认请求到哪个云环境的资源
-        // 此处填入云开发环境 ID, 如不填则使用默认环境（第一个创建的环境）
-
-        // env: '',
+        // Todo 此处填写您的云开发环境
+        env: 'cloud1-1g1gsdprc70f7a85',
       });
     }
 
     // 初始化 SDK
     this.sdk = new AppDevSdk({
-      debug: true,
+      debug: false,
       appKey: APP_KEY,
       getAccessToken: this.getAccessToken,
       wsConfig: {},

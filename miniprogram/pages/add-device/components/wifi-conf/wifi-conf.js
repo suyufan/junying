@@ -70,6 +70,7 @@ Component({
     },
 
     onTargetWifiInputComplete(e) {
+      console.log("e",e);
       this.targetWifi = e.detail.wifi;
       if (this.data.needDeviceAp) {
         // SoftAP配网：需要先连接到设备热点

@@ -6,6 +6,7 @@
     "pages/add-device/air-kiss/air-kiss",
     "pages/add-device/smart-config/smart-config",
     "pages/add-device/soft-ap/soft-ap",
+    "pages/add-device/ble-combo/ble-combo",
     "pages/firmware-upgrade/firmware-upgrade",
     "pages/share/share-list/share-list",
     "pages/share/receive-share/receive-share",

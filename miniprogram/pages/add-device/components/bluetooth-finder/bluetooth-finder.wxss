@@ -1,14 +1,4 @@
 /* pages/add-device/components/bluetooth-finder.wxss */
-.page-subtitle {
-  height: calc(30vvh);
-  margin-top: 100rpx;
-  font-size: 28rpx;
-  text-align: center;
-}
-.page-describe {
-  font-size: 20rpx;
-  text-align: center;
-}
 .device-item{
   display: flex;
   justify-content: space-between;

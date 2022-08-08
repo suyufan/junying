@@ -1,2 +1,5 @@
-<!--pages/add-device/simple-config/simple-config.wxml-->
-<text>pages/add-device/simple-config/simple-config.wxml</text>
+<wifi-conf
+  title="SimpleConfig 配网"
+  pluginName="wifiConfSimpleConfig"
+  errorTips="{{errorTips}}"
+/>

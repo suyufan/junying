@@ -30,6 +30,8 @@ Component({
 
     onClickComplete() {
       const targetWifi = this.wifiForm.getSelectedWifiInfo();
+      targetWifi.forceNewApi = true
+      console.log("targetWifi",targetWifi);
       if (!targetWifi || !targetWifi.SSID) {
         wx.showModal({
           title: '请先选择WiFi',
