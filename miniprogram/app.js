@@ -36,7 +36,7 @@ App({
     } else {
       wx.cloud.init({
         // Todo 此处填写您的云开发环境
-        env: 'cloud1-1g1gsdprc70f7a85',
+        env: 'junyingbao-4ghkss9vef46e9ed',
       });
     }
 
