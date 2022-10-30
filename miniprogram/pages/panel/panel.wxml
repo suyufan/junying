@@ -24,7 +24,11 @@
       <view class="item-status status-{{deviceStatus === 1 ? 'online' : 'offline'}}" wx:else>{{deviceStatus === 1 ? '在线' : '离线'}}</view>
     </view>
     <view class="page-main">
-      <view class="panel-list">
+      <text style="font-size: 30rpx;">请输入账户名：</text>
+      <input class="weui-input" style="border: 1rpx solid #ccc;border-radius: 5rpx; padding: 10rpx 10rpx; margin: 15rpx 0rpx; width: 97%" value="{{id}}" bindchange="inputChange"/>
+      <text style="font-size: 25rpx; color: grey;">不知道账号？</text>
+      <button class="weui-btn" type="primary" bindtap="submitForm" style="width: 180rpx;float: right; font-size: 30rpx; font-weight:normal" bindtap="login">确定</button>
+      <!-- <view class="panel-list">
         <block wx:if="{{dataTemplate.properties.length > 0}}">
           <block wx:for="{{dataTemplate.properties}}" wx:key="id">
             <picker wx:if="{{item.define.type === 'enum'}}"
@@ -46,10 +50,10 @@
             />
           </block>
         </block>
-        <view wx:else class="empty-property-tip">尚未定义产品的数据模板，完成数据模板定义后即可使用设备控制功能</view>
+        <view wx:else class="empty-property-tip">尚未定义产品的数据模板，完成数据模板定义后即可使用设备控制功能</view> -->
       </view>
 
-      <view class="operation-btn-group">
+      <!-- <view class="operation-btn-group">
         <view class="file-manage-btn">
           <btn-group
             buttons="{{[{ btnText: '文件资源管理', type: 'default'}]}}"
@@ -71,8 +75,8 @@
           no-padding="{{true}}"
         />
 
-      </view>
-    </view>
+      </view> -->
+    <!-- </view> -->
   </view>
 </page-wrapper>
 <view class="modal" wx:if="{{numberDialog.visible && numberDialog.panelConfig}}">

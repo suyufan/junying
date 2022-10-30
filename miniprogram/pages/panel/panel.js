@@ -47,8 +47,23 @@ Page({
       visible: false,
       panelConfig: null,
     },
+    id: ''
   },
-
+  login: function () {
+    wx.showModal({
+        title: '提示',
+        content: '手机号：' + this.data.id+'  密码：',
+        success: function (res) {
+            if (res.confirm) {
+            }
+        }
+    })
+  },
+  inputChange: function (e) {
+    this.setData({
+        id: e.detail.value
+    })
+  },
   onLoad({ deviceId, isShareDevice = false }) {
     this.setData({ ipx: app.globalData.isIpx });
 

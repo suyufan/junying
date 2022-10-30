@@ -4,12 +4,12 @@ var __DEFINE__ = function(modId, func, req) { var m = { exports: {}, _tempexport
 var __REQUIRE__ = function(modId, source) { if(!__MODS__[modId]) return require(source); if(!__MODS__[modId].status) { var m = __MODS__[modId].m; m._exports = m._tempexports; var desp = Object.getOwnPropertyDescriptor(m, "exports"); if (desp && desp.configurable) Object.defineProperty(m, "exports", { set: function (val) { if(typeof val === "object" && val !== m._exports) { m._exports.__proto__ = val.__proto__; Object.keys(val).forEach(function (k) { m._exports[k] = val[k]; }); } m._tempexports = val }, get: function () { return m._tempexports; } }); __MODS__[modId].status = 1; __MODS__[modId].func(__MODS__[modId].req, m, m.exports); } return __MODS__[modId].m.exports; };
 var __REQUIRE_WILDCARD__ = function(obj) { if(obj && obj.__esModule) { return obj; } else { var newObj = {}; if(obj != null) { for(var k in obj) { if (Object.prototype.hasOwnProperty.call(obj, k)) newObj[k] = obj[k]; } } newObj.default = obj; return newObj; } };
 var __REQUIRE_DEFAULT__ = function(obj) { return obj && obj.__esModule ? obj.default : obj; };
-__DEFINE__(1657335106956, function(require, module, exports) {
+__DEFINE__(1666529690859, function(require, module, exports) {
 
 module.exports = require('./lib/index');
 
-}, function(modId) {var map = {"./lib/index":1657335106957}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1657335106957, function(require, module, exports) {
+}, function(modId) {var map = {"./lib/index":1666529690860}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1666529690860, function(require, module, exports) {
 
 
 var alphabet = require('./alphabet');
@@ -73,8 +73,8 @@ module.exports.worker = worker;
 module.exports.characters = characters;
 module.exports.isValid = isValid;
 
-}, function(modId) { var map = {"./alphabet":1657335106958,"./build":1657335106960,"./is-valid":1657335106964,"./util/cluster-worker-id":1657335106965}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1657335106958, function(require, module, exports) {
+}, function(modId) { var map = {"./alphabet":1666529690861,"./build":1666529690863,"./is-valid":1666529690867,"./util/cluster-worker-id":1666529690868}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1666529690861, function(require, module, exports) {
 
 
 var randomFromSeed = require('./random/random-from-seed');
@@ -179,8 +179,8 @@ module.exports = {
     shuffled: getShuffled
 };
 
-}, function(modId) { var map = {"./random/random-from-seed":1657335106959}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1657335106959, function(require, module, exports) {
+}, function(modId) { var map = {"./random/random-from-seed":1666529690862}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1666529690862, function(require, module, exports) {
 
 
 // Found this seed-based random generator somewhere
@@ -208,7 +208,7 @@ module.exports = {
 };
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1657335106960, function(require, module, exports) {
+__DEFINE__(1666529690863, function(require, module, exports) {
 
 
 var generate = require('./generate');
@@ -256,8 +256,8 @@ function build(clusterWorkerId) {
 
 module.exports = build;
 
-}, function(modId) { var map = {"./generate":1657335106961,"./alphabet":1657335106958}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1657335106961, function(require, module, exports) {
+}, function(modId) { var map = {"./generate":1666529690864,"./alphabet":1666529690861}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1666529690864, function(require, module, exports) {
 
 
 var alphabet = require('./alphabet');
@@ -280,8 +280,8 @@ function generate(number) {
 
 module.exports = generate;
 
-}, function(modId) { var map = {"./alphabet":1657335106958,"./random/random-byte":1657335106962,"./nanoid-format":1657335106963}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1657335106962, function(require, module, exports) {
+}, function(modId) { var map = {"./alphabet":1666529690861,"./random/random-byte":1666529690865,"./nanoid-format":1666529690866}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1666529690865, function(require, module, exports) {
 
 
 var crypto = typeof window === 'object' && (window.crypto || window.msCrypto); // IE 11 uses window.msCrypto
@@ -305,7 +305,7 @@ if (!crypto || !crypto.getRandomValues) {
 module.exports = randomByte;
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1657335106963, function(require, module, exports) {
+__DEFINE__(1666529690866, function(require, module, exports) {
 /**
  * Secure random string generator with custom alphabet.
  *
@@ -358,7 +358,7 @@ module.exports = function (random, alphabet, size) {
  */
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1657335106964, function(require, module, exports) {
+__DEFINE__(1666529690867, function(require, module, exports) {
 
 var alphabet = require('./alphabet');
 
@@ -375,13 +375,13 @@ function isShortId(id) {
 
 module.exports = isShortId;
 
-}, function(modId) { var map = {"./alphabet":1657335106958}; return __REQUIRE__(map[modId], modId); })
-__DEFINE__(1657335106965, function(require, module, exports) {
+}, function(modId) { var map = {"./alphabet":1666529690861}; return __REQUIRE__(map[modId], modId); })
+__DEFINE__(1666529690868, function(require, module, exports) {
 
 
 module.exports = 0;
 
 }, function(modId) { var map = {}; return __REQUIRE__(map[modId], modId); })
-return __REQUIRE__(1657335106956);
+return __REQUIRE__(1666529690859);
 })()
 //# sourceMappingURL=index.js.map
