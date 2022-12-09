@@ -14,13 +14,16 @@
 }
 
 .config-device-guide {
-  margin-top: 16px;
+  margin: 16px 0px;
   color: #333333;
   font-size: 28rpx;
   line-height: 1.5;
   word-break: break-all;
 }
+.btn-group {
+  margin-bottom: 10px;
+}
 
 .config-device-guide-line {
-  margin-bottom: 7px;
+  margin-bottom: 5px;
 }

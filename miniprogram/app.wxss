@@ -94,13 +94,13 @@ button.pure-btn {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 100%;
-  padding: 0 30rpx;
+  padding: 0rpx 30rpx;
 }
 .btn-group.no-padding {
   padding: 0;
 }
 .btn-group .btn {
-  margin-bottom: 15rpx;
+  margin-bottom:10rpx;
 }
 .btn-group .btn .btn-icon {
   width: 32rpx;

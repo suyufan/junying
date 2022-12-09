@@ -30,10 +30,6 @@
     >
       授权登录
     </button>
-
-    <view class="copyright-text">
-    <p>©2021 骏途数字传媒</p>
-    </view>
   </view>
   <mp-loading type="dot-gray" wx:elif="{{show === 'loading'}}"></mp-loading>
   <block wx:elif="{{show === 'page'}}">

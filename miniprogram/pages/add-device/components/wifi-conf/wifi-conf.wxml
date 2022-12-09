@@ -41,9 +41,6 @@
     <block wx:elif="{{step === -2}}">
       <error-view bind:complete="onBack" errorTips="{{errorTips}}" logs="{{logs}}"/>
     </block>
-    <view class="copyright-text" >
-      <p>©2021 骏途数字传媒</p>
-    </view>
   </view>
   <mp-loading type="dot-gray" wx:else></mp-loading>
 </page-wrapper>

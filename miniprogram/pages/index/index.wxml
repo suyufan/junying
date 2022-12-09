@@ -61,8 +61,5 @@
       
       <view class="debug-userid">用户 ID: <text user-select>{{userId}}</text></view>
     </view>
-    <view class="copyright-text">
-      <p>©2021 骏途数字传媒</p>
-    </view>
   </view>
 </page-wrapper>
